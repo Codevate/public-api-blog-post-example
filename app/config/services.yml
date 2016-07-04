@@ -1,0 +1,4 @@
+services:
+    app.manager.oauth_client:
+        class: AppBundle\Entity\Manager\OAuthClientManager
+        arguments: ["@fos_oauth_server.entity_manager", "%fos_oauth_server.model.client.class%"]
